@@ -1,3 +1,4 @@
+
 const fs = require('fs')
 let count = 0
 const prompt = msg => {
@@ -9,19 +10,18 @@ const prompt = msg => {
         s += buf, fs.readSync(0, buf, 0, 1, 0);
         if (buf[0] - 10 === 0 || buf[0] - 13 === 0) {
             i++;
-            // console.log('first',i)
+            
         }
-    } 
+    }
     fs.readSync(0, stdinBuffer, 0, 1, null);
     count++;
     return s.slice(1).replace(/^\n/, '');
 };
 
+let a = (prompt("Enter the first number:"));
+let b = (prompt("Enter the second number:"));
 
-console.log('ante per addi manda')
+let result = (a / 2) + (b / 3);
 
-var nam = prompt('Enter first name:  ')
-var name = prompt('Enter last name:  ')
-
-console.log(nam , name)
+console.log("a/2 + b/3 :", result);
 
