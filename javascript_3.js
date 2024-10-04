@@ -17,11 +17,18 @@ const prompt = msg => {
     count++;
     return s.slice(1).replace(/^\n/, '');
 };
+let a = Number(prompt("enter first no:"));
+let b = (prompt(" operation:"));
+let c = Number(prompt ("second num:"));
 
-let a = (prompt("Enter the first number:"));
-let b = (prompt("Enter the second number:"));
-
-let result = (a / 2) + (b / 3);
-
-console.log("a/2 + b/3 ", result);
-
+let result;
+if (b === "+") {
+    result = a + c;
+}if (b === "-") {
+    result = a - c;
+}if (b === "*") {
+    result = a * c;
+}if (b === "/") {
+    result = a / c;
+} 
+console.log( result);
