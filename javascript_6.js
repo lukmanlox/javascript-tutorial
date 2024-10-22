@@ -18,40 +18,38 @@ const prompt = msg => {
 };
 
 
+let integerFirstNum;
+let integerSecondNum;
+
 
 while (true) {
-
-    let integerFirstNum = 0
-
-
+   
     while (true) {
         let firstNumberString = prompt("Enter the first number:");
         integerFirstNum = Number(firstNumberString);
 
         if (isNaN(integerFirstNum)) {
             console.log("Please enter a valid number.");
-            continue;
-        }else{
+            continue; 
+        } else {
             break;
         }
     }
 
-
-
+   
     while (true) {
-    let secondNumberString = prompt("Enter the second number:");
-    
-    let integerSecondNum = Number(secondNumberString);
+        let secondNumberString = prompt("Enter the second number:");
+        integerSecondNum = Number(secondNumberString);
 
-    
-    if (isNaN(integerSecondNum)) {
-        console.log("Please enter a valid second number.");
-        continue;
-    }else{
-        break;
+        if (isNaN(integerSecondNum)) {
+            console.log("Please enter a valid second number.");
+            continue; 
+        } else {
+            break; 
+        }
     }
 
+    break; 
 }
-    console.log(`You entered the numbers: ${integerFirstNum} and ${integerSecondNum}`);
-    break;
-}
+
+console.log(`You entered the numbers: ${integerFirstNum} and ${integerSecondNum}`);
