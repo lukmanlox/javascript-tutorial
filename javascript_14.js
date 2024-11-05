@@ -16,10 +16,24 @@ const prompt = msg => {
     count++;
     return s.slice(1).replace(/^\n/, '');
 };
-let a = 2;
-let b = 'hello';
 
-console.log((a += 3));
+let a = Number(prompt("Enter a number:"));
 
+let output = "";
+for (let i = 1; i <= a; i++) {
+    let stars = '';
+    
+    
+    for (let j = 1; j <= a - i; j++) {
+        stars += ' '; 
+    }
+    
+   
+    for (let l = 1; l <= (2 * i - 1); l++) {
+        stars += '*';
+    }
+    
+    output += stars + '\n';
+}
 
-console.log((b += ' world')); 
+console.log(output); 
