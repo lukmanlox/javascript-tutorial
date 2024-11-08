@@ -16,36 +16,10 @@ const prompt = msg => {
     count++;
     return s.slice(1).replace(/^\n/, '');
 };
-
-// *
-// **
-// ***
-// ****
-// *****
-
-
-
-
-
-// ************
-
-
 let a = Number(prompt("Enter a number:"));
 
 let output = "";
-for (let i = 1; i <= a; i++) {
-
-    for(let j=0;j<i;j++){
-        output = output+ "* "
-    }
-    output = output  + "\n"; 
-
+for (let i = a; i > 0; i--) {
+    output += "* ".repeat(i) + "\n";  
 }
 console.log(output);
-
-
-
-
-
-
-
