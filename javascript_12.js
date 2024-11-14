@@ -18,11 +18,12 @@ const prompt = msg => {
 };
 let a = Number(prompt("Enter is number:"));
 
-let output = "";
+// let output = "";
 for (let i = 0; i < a; i++) {   
     for (let j = 0; j < a; j++) {
-        output += "*";
+        process.stdout.write("*")
     }
-    output += "\n"; 
+    // output += "\n"; 
+    process.stdout.write("\n")
 }
-console.log(output);
+// console.log(output);

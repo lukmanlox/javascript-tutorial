@@ -12,7 +12,7 @@ const prompt = msg => {
             // console.log('first',i)
         }
     } 
-    fs.readSync(0, stdinBuffer, 0, 1, null);
+    fs.readSync(0, stdinBuffer, 0, 1, null); 
     count++;
     return s.slice(1).replace(/^\n/, '');
 };
