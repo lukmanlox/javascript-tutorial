@@ -28,7 +28,7 @@ for (let i = 1; i <= a; i++) {
 
    
     for (let j = 0; j < i; j++) {
-        output += "*";
+        output += "* ";
     }
     output += "\n"; 
 }
