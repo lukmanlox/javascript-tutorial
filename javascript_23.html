@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/javascript_23.js" defer></script>
+
+    <style>
+        /* General button styles */
+        button {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Button for turning on the light */
+        #oning {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+
+        /* Hover effect for turning on the light */
+        #oning:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        /* Button for turning off the light */
+        #offing {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+
+        /* Hover effect for turning off the light */
+        #offing:hover {
+            background-color: #e53935;
+            transform: scale(1.05);
+        }
+
+        /* Focus effect */
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Center the button container */
+        div {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* General body layout */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Image styles */
+        img {
+            height: 227px;
+            margin: 10px;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            /* Stack the images vertically */
+            img {
+                height: 180px; /* Smaller size for mobile */
+            }
+
+            /* Make buttons smaller on mobile */
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            /* Stack the buttons vertically */
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* Make buttons take up full width on mobile */
+            button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Even smaller devices (e.g., phones in portrait mode) */
+        @media (max-width: 480px) {
+            /* Reduce the size of the images further */
+            img {
+                height: 150px;
+            }
+
+            /* Reduce font size for buttons on very small screens */
+            button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <img id="on-image" src="./nolbulb.png" alt="oning">
+    <img id="off-image" src="./offbulb.png" alt="offing">
+    
+    <div>
+        <button id="offing">Turn off the light</button>
+        <button id="oning">Turn on the light</button>  
+    </div>
+
+ 
+
+</body>
+</html>
