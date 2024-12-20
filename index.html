@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mazhavill</title>
+    <style>
+        #red, #blue, #green, #yellow, #violet, #orange {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        #red {
+            background-color: rgba(255, 0, 0, 0.192);
+        }
+        .red1 {
+            background-color: #ff0000;
+        }
+        #blue {
+            background-color: rgba(4, 0, 255, 0.192);
+        }
+        #green {
+            background-color: rgba(128, 255, 0, 0.411);
+        }
+        #yellow {
+            background-color: rgba(255, 145, 0, 0.274);
+        }
+        #violet {
+            background-color: rgba(252, 2, 252, 0.24);
+        }
+        #orange {
+            background-color: rgba(236, 110, 7, 0.185);
+        }
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+        .color-container {
+            display: flex;
+        }
+        .color-item {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .color-box {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color-container">
+        <div class="color-item">
+            <div id="red" class="color-box"></div>
+            <button id="button1" style="background-color: #ff000088;">Red click me</button>
+        </div>
+        <div class="color-item">
+            <div id="blue" class="color-box"></div>
+            <button id="button2" style="background-color: #0011ff41;" > Blue click me</button>
+        </div>
+        <div class="color-item">
+            <div id="green" class="color-box"></div>
+            <button id="button3" style="background-color: #7bff0059;" > Green click me</button>
+        </div>
+        <div class="color-item">
+            <div id="yellow" class="color-box"></div>
+            <button id="button4" style="background-color: #eeff0080;" > Yellow click me</button>
+        </div>
+        <div class="color-item">
+            <div id="violet" class="color-box"></div>
+            <button id="button5" style="background-color: #6f00ff5b;" >  Violet click me</button>
+        </div>
+        <div class="color-item">
+            <div id="orange" class="color-box"></div>
+            <button id="button6" style="background-color: #ff7b003d;" > Orange click me</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
